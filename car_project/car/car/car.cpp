@@ -12,11 +12,13 @@ struct Car
     void printInfo() { cout << "brand: " << brand << "\n" << "model: " << model << "\n" << "year: " << year << "\n" << "power: " << power << endl; }
 };
 double powerToKW(Car& s) { return s.power * 0.735; }
+double calculateTax(Car& s) { return s.power * 10; }
 int main()
 {
     Car s = { "Toyota","Camry",2020,200 };
     s.printInfo();
     cout<<powerToKW(s)<<" KWt" << endl;
+    cout << calculateTax(s)<<" rub" << endl;
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
