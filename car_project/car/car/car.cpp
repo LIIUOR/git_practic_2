@@ -9,7 +9,11 @@ struct Car
     string model;
     int year;
     int power;
-    void printInfo() { cout << "brand: "<<brand<<"\n"<<"model: "<<model<<endl; }
+
+    void printInfo() { cout << "brand: "<<brand<<" model: "<<model<<"\n"<<"year: "<<year<<" power: "<<power<<endl; }
+
+    
+
 };
 double powerToKW(Car& s) { return s.power * 0.735; }
 double calculateTax(Car& s) { return s.power * 10; }
